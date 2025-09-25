@@ -1,50 +1,44 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Product Tank Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. User-Centric Design
+Every feature must solve a real user problem with measurable impact. User research and feedback drive all product decisions. Features without clear user value are not built.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Data-Driven Decisions
+All product decisions must be backed by data, metrics, or user research. Assumptions must be validated through experimentation. Success metrics must be defined before feature development begins.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Iterative Development
+Build, measure, learn cycle is mandatory. Features are released as MVPs and improved based on user feedback. No feature is considered "complete" - continuous improvement is expected.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Technical Excellence
+Code quality, performance, and maintainability are non-negotiable. Technical debt must be tracked and addressed. All code must be tested, documented, and reviewed.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Security & Privacy First
+User data protection and security are fundamental requirements, not afterthoughts. Privacy by design principles must be followed. Security reviews are mandatory for all features.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Additional Constraints
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+- **Performance**: All features must meet performance benchmarks (page load < 2s, API response < 500ms)
+- **Accessibility**: WCAG 2.1 AA compliance required for all user-facing features
+- **Browser Support**: Support for modern browsers (Chrome, Firefox, Safari, Edge) with graceful degradation
+- **Mobile Responsive**: All features must work seamlessly on mobile devices
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## Development Workflow
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+- **Code Review**: All changes require peer review and approval
+- **Testing**: Unit tests, integration tests, and E2E tests required for all features
+- **Documentation**: API documentation and user guides must be updated with each release
+- **Deployment**: Automated CI/CD pipeline with staging environment validation
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution supersedes all other development practices. Amendments require:
+1. Documentation of the change rationale
+2. Impact assessment on existing features
+3. Team consensus and approval
+4. Migration plan for any breaking changes
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+All PRs must verify compliance with constitution principles. Complexity must be justified with clear business value. Use this constitution as the foundation for all product and technical decisions.
+
+**Version**: 1.0.0 | **Ratified**: 2024-09-24 | **Last Amended**: 2024-09-24
